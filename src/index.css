@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: oklch(0.965 0.007 235);
+  --color-surface: oklch(0.995 0.003 235);
+  --color-foreground: oklch(0.21 0.028 242);
+  --color-muted: oklch(0.45 0.022 240);
+  --color-border: oklch(0.84 0.014 236);
+  --color-primary: oklch(0.43 0.125 245);
+  --color-primary-foreground: oklch(0.99 0.004 240);
+  --color-danger: oklch(0.46 0.155 26);
+  --color-danger-foreground: oklch(0.99 0.004 25);
+  --color-success: oklch(0.42 0.115 155);
+  --color-warning: oklch(0.46 0.125 68);
+
+  --font-sans: "Instrument Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --text-display: clamp(1.625rem, 1.25rem + 1vw, 2.25rem);
+  --text-display--line-height: 1.15;
+  --text-display--font-weight: 600;
+
+  --radius-card: 0.5rem;
+  --radius-control: 0.375rem;
+  --shadow-surface: 0 1px 2px 0 oklch(0.21 0.028 242 / 0.04);
+  --shadow-overlay: 0 16px 40px -8px oklch(0.21 0.028 242 / 0.18);
+}
+
+html {
+  font-family: var(--font-sans);
+  font-synthesis-weight: none;
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *:not(.animate-spin):not(.animate-pulse),
+  *:not(.animate-spin):not(.animate-pulse)::before,
+  *:not(.animate-spin):not(.animate-pulse)::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Copperline Service Ops",
+  "description": "Home service operations web application for managing customer appointments, technician assignments, staff records, and overtime approvals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
